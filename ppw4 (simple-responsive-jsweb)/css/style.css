@@ -1,0 +1,205 @@
+/* Mengatur padding, margin, dan box-sizing untuk semua elemen agar konsisten */
+* {  
+  padding: 0;  
+  margin: 0;  
+  box-sizing: border-box;  
+}  
+
+/* Pengaturan dasar untuk elemen body */
+body {  
+  background: #dedede;  /* Warna latar belakang abu-abu terang */
+  font-family: 'Verdana', arial, sans-serif;  /* Font default untuk teks */
+  font-size: 15px;  /* Ukuran font standar */
+}  
+
+/* Pengaturan untuk elemen paragraf */
+p {  
+  margin-bottom: 20px;  /* Margin bawah untuk spasi antar paragraf */
+  line-height: 1.5em;  /* Jarak antar baris teks dalam paragraf */
+}  
+
+/* Pengaturan untuk elemen heading level 3 */
+h3 {  
+  margin-bottom: 20px;  /* Spasi bawah untuk h3 */
+  border-bottom: 1px solid #aaa;  /* Garis bawah abu-abu terang */
+}  
+
+/* Pengaturan untuk semua elemen link */
+a {  
+  text-decoration: none;  /* Menghapus underline default dari link */
+  color: #333;  /* Warna teks abu-abu gelap */
+}  
+
+/* Warna teks link saat dihover */
+a:hover {  
+  color: #666;  /* Warna teks saat kursor melayang di atas link */
+}  
+
+/* Container utama yang mengelilingi konten */
+.container {  
+  max-width: 1080px;  /* Lebar maksimal container */
+  margin: 20px auto;  /* Spasi atas-bawah dan mengatur posisi di tengah */
+  background: #fff;  /* Latar belakang putih */
+  overflow: hidden;  /* Mencegah elemen child meluap keluar container */
+  padding: 10px;  /* Ruang di dalam container */
+}  
+
+/* Header bagian atas */
+.header {  
+  border: 1px solid #dedede;  /* Garis batas abu-abu muda */
+  padding: 10px;  /* Ruang di dalam header */
+  margin: 10px;  /* Margin luar */
+  background: #9E9AFB;  /* Latar belakang ungu lembut */
+}  
+
+/* Sidebar kiri */
+.left {  
+  width: 250px;  /* Lebar tetap 250px */
+  border: 1px solid #dedede;  /* Garis batas abu-abu muda */
+  padding: 10px;  /* Ruang di dalam elemen */
+  margin: 10px;  /* Margin luar */
+  float: left;  /* Posisi di kiri */
+}  
+
+/* Menghilangkan bullet points dari daftar di sidebar kiri */
+.left ul {  
+  list-style-type: none;  /* Menghapus tanda bullet */
+}  
+
+/* Setiap item daftar di sidebar kiri */
+.left ul li {  
+  display: block;  /* Menampilkan item dalam bentuk blok */
+}  
+
+/* Link dalam daftar sidebar kiri */
+.left ul li a {  
+  display: block;  /* Menampilkan link sebagai blok penuh */
+  border-bottom: 1px solid #dedede;  /* Garis bawah pada tiap link */
+  margin-bottom: 10px;  /* Spasi antara link */
+  padding: 10px 5px;  /* Padding dalam link */
+}  
+
+/* Warna link di sidebar kiri saat dihover */
+.left ul li a:hover {  
+  color: #461AF3;  /* Warna link ungu saat dihover */
+}  
+
+/* Bagian konten tengah */
+.middle {  
+  width: 500px;  /* Lebar tetap 500px */
+  border: 1px solid #dedede;  /* Garis batas abu-abu muda */
+  padding: 10px;  /* Ruang di dalam elemen */
+  margin: 10px;  /* Margin luar */
+  float: left;  /* Posisi di kiri */
+}  
+
+/* Gambar di dalam konten tengah */
+.middle img {  
+  max-width: 100%;  /* Mengatur gambar agar tidak melebihi lebar elemen */
+  height: auto;  /* Menjaga proporsi gambar */
+}  
+
+/* Link dalam konten tengah */
+.middle a {  
+  font-weight: bold;  /* Membuat teks link tebal */
+}  
+
+/* Sidebar kanan */
+.right {  
+  width: 250px;  /* Lebar tetap 250px */
+  border: 1px solid #dedede;  /* Garis batas abu-abu muda */
+  padding: 10px;  /* Ruang di dalam elemen */
+  margin: 10px;  /* Margin luar */
+  float: left;  /* Posisi di kiri */
+}  
+
+/* Menghilangkan bullet points dari daftar di sidebar kanan */
+.right ul {  
+  list-style-type: none;  /* Menghapus tanda bullet */
+}  
+
+/* Setiap item daftar di sidebar kanan */
+.right ul li {  
+  display: block;  /* Menampilkan item dalam bentuk blok */
+}  
+
+/* Link dalam daftar sidebar kanan */
+.right ul li a {  
+  display: block;  /* Menampilkan link sebagai blok penuh */
+  border-bottom: 1px solid #dedede;  /* Garis bawah pada tiap link */
+  margin-bottom: 10px;  /* Spasi antara link */
+  padding: 10px 5px;  /* Padding dalam link */
+}  
+
+/* Warna link di sidebar kanan saat dihover */
+.right ul li a:hover {  
+  color: #461AF3;  /* Warna link ungu saat dihover */
+}  
+
+/* Footer di bagian bawah */
+.footer {  
+  clear: both;  /* Mengatur agar footer berada di bawah elemen lain */
+  border: 1px solid #dedede;  /* Garis batas abu-abu muda */
+  padding: 15px;  /* Ruang di dalam elemen */
+  margin: 10px;  /* Margin luar */
+  background: #9E9AFB;  /* Latar belakang ungu lembut */
+}  
+
+/* Media query untuk layar dengan lebar maksimal 959px */
+@media screen and (max-width: 959px) {  
+  .container {  
+      width: 100%;  /* Mengatur lebar container agar sesuai layar */
+  }  
+
+  .left {  
+      width: 70%;  /* Lebar sidebar kiri menjadi 70% */
+  }  
+
+  .right {  
+      width: 30%;  /* Lebar sidebar kanan menjadi 30% */
+  }  
+
+  img {  
+      width: 100%;  /* Mengatur gambar agar mengambil lebar penuh */
+  }  
+}  
+
+/* Media query untuk layar dengan lebar maksimal 1080px */
+@media screen and (max-width: 1080px) {  
+  .container {  
+      width: 100%;  /* Lebar container menjadi 100% */
+  }  
+
+  .left {  
+      width: 25%;  /* Lebar sidebar kiri menjadi 25% */
+      background: #D6CCFE;  /* Latar belakang ungu terang */
+  }  
+
+  .middle {  
+      width: 68%;  /* Lebar konten tengah menjadi 68% */
+      float: right;  /* Posisi konten tengah di kanan */
+  }  
+
+  .right {  
+      clear: both;  /* Mengatur agar elemen ini berada di bawah lainnya */
+      padding: 1% 4%;  /* Padding dalam elemen */
+      width: auto;  /* Lebar otomatis */
+      float: none;  /* Menghapus float */
+      background: #D6CCFE;  /* Latar belakang ungu terang */
+  }  
+}  
+
+/* Media query untuk layar dengan lebar maksimal 780px */
+@media screen and (max-width: 780px) {  
+  .header,  
+  .footer {  
+      text-align: center;  /* Mengatur teks di header dan footer ke tengah */
+  }  
+
+  .left,  
+  .middle,  
+  .right {  
+      width: auto;  /* Lebar otomatis untuk elemen layout */
+      float: none;  /* Menghapus float */
+  }  
+}
