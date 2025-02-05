@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Noverianus - Biodata</title>
+	<style>
+        .project-card {
+            position: relative;
+            height: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .tech-icons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tech-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 299px; 
+            height: 390px; 
+            border-radius: 300px; /* Sudut membulat */
+            overflow: hidden; /* Menghapus bagian gambar yang melampaui batas */
+            background-color: #f0f0f0; /* Warna latar belakang */
+        }
+
+        .gambar {
+            filter: grayscale(100%); /* Gambar hitam putih secara default */
+            transition: filter 0.5s; /* Efek transisi */
+        }
+
+        .container:hover .gambar {
+            filter: grayscale(0%); /* Mengembalikan warna saat hover */
+        }
+
+        .main1 {
+            height: 100vh; /* Tinggi section 100% dari tinggi viewport */
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f5f5f5; /* Warna latar belakang yang sama */
+        }
+
+		.section1 {
+            height: 100vh; /* Tinggi section 100% dari tinggi viewport */
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f5f5f5; /* Warna latar belakang yang sama */
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5;">
+    <header>
+    </header>
+
+    <main class="main1" style="padding: 40px 10%; display: flex; justify-content: space-between; align-items: center;">
+        <div style="flex: 1;">
+            <h1 style="color: #666; font-weight: normal; margin-bottom: 0px;">22220027</h1>
+            <h2 style="font-size: 69px; margin-bottom: 20px; margin-top: 10px">Noverianus</h2>
+            <p style="color: #666; line-height: 1.6; margin-bottom: 30px; text-align: justify">
+				Email : 22220027@respati.ac.id <br>
+				Phone : +62 822-8341-8724 <br>
+				Alamat : Malinau, Kalimantan Utara <br>
+				Saya adalah mahasiswa aktif semester 5 dari Program Studi Informatika di Universitas Respati Yogyakarta, 
+				dengan minat di bidang Data Science. Saya terus mengembangkan keterampilan ini melalui pembelajaran mandiri.
+            </p>
+            <div style="display: flex; gap: 20px;">
+				<a href="mailto:noverjkd@gmail.com?subject=Hello">
+					<button style="background-color: #2c3e50; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer;">Email</button>
+				</a>
+				<a href="https://wa.me/6282283418724" target="_blank">
+                    <button style="background-color: transparent; border: 2px solid #2c3e50; color: #2c3e50; padding: 10px 20px; border-radius:5px;cursor: pointer;">WhatsApp</button>
+				</a>
+            </div>
+            <div style="margin-top: 20px;">
+                <a href="https://drive.google.com/thumbnail?id=13mOMyByLuZOQSqJkwWrHBsyMASwRF6Q2&sz=s4000" target="_blank" style="display: flex;">
+                    <button style="background-color: #dde5fa; color: #2c3e50; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 8px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+                        My CV 
+                        <i class="fas fa-external-link-alt" style="font-size: 16px;"></i>
+                    </button>
+                </a>
+            </div>
+
+        </div>
+        <div style="flex: 1; display: flex; justify-content: right;">
+            <div class="container">
+                <img src="https://drive.google.com/thumbnail?id=1YdFSuOCLYV_-H8hhF-LjIjvdbaTQgitB&sz=s4000" class="gambar" alt="Gambar"  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                ">
+            </div>
+        </div>
+    </main>
+
+	    <!-- New Projects Section -->
+		<section class="section1"  style="padding: 60px 10%;">
+			<h2 style="font-size: 48px; text-align: center; margin-bottom: 20px;">Kegiatan</h2>
+			<p style="text-align: center; color: #666; max-width: 800px; margin: 0 auto 40px;">
+				Selain menjalani peran sebagai mahasiswa, saya juga aktif berpartisipasi dalam kegiatan di luar proses belajar mengajar.
+				Berikut adalah beberapa kegiatan yang telah saya ikuti selama di Universitas Respati Yogyakarta.
+			</p>
+			
+			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+				<!-- Project Card 1 -->
+				<div class="project-card">
+					<img src="https://drive.google.com/thumbnail?id=1-q170H9q5FUbS4b1hGwbkNsem9BwxuJC&sz=s4000" alt="Mountain landscape" class="project-image">
+					<div class="project-overlay">
+						<h3 style="color: white; font-size: 24px; margin-bottom: 10px;">BEM FST</h3>
+						<p style="color: white; text-align: center; margin-bottom: 20px;">Aksi Kemanusiaan Donor Darah</p>
+						<a href="https://www.instagram.com/p/C383ruRyYi8/?igsh=MWR5a2F4bTBuOGhlbA==">
+						 <button style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Dokumentasi</button>
+						</a>
+
+					</div>
+				</div>
+
+				<!-- Project Card 2 -->
+				<div class="project-card">
+					<img src="https://drive.google.com/thumbnail?id=136vaicTRQgJ6DdQI10BGcCQNnN6XD2xs&sz=s4000" alt="Portfolio preview" class="project-image">
+					<div class="project-overlay">
+						<h3 style="color: white; font-size: 24px; margin-bottom: 10px;">UKM Taekwondo</h3>
+						<p style="color: white; text-align: center; margin-bottom: 20px;">Tryout Taekwondo UII, UINSUKA, UKDW, UNRIYO</p>
+						<a href="https://www.instagram.com/p/C-meGtmPkxs/?igsh=dmd2dHBkcTZsbDJx">
+							<button style="background-color: #ff3366; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Dokumentasi</button>
+						</a>
+					</div>
+				</div>
+	
+				<!-- Project Card 3 -->
+				<div class="project-card">
+					<img src="https://drive.google.com/thumbnail?id=1gXNWPmogJumhoFmTGI9aqVjz9lbUPPf3&sz=s4000" alt="Recipe website preview" class="project-image">
+					<div class="project-overlay">
+						<h3 style="color: white; font-size: 24px; margin-bottom: 10px;">BEM FST</h3>
+						<p style="color: white; text-align: center; margin-bottom: 20px;">HUT BEM FST ke-15</p>
+						<a href="https://www.instagram.com/p/C8axNiBS3U-/?igsh=MXgyODc5cWE4ZTMwYw==">
+							<button style="background-color: #1a73e8; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Dokumentasi</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+</body>
+</html>

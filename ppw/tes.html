@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Responsive</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #dedede;
+            font-family: 'Verdana', arial, sans-serif;
+            font-size: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        a:hover {
+            color: #666;
+        }
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5em;
+        }
+        .container {
+            max-width: 1080px;
+            margin: 20px auto;
+            background: #fff;
+            overflow: hidden;
+            padding: 10px;
+        }
+        .header {
+            border: 1px solid #dedede;
+            padding: 10px;
+            margin: 10px;
+            background: #9E9AFB;
+        }
+        .footer {
+            clear: both;
+            border: 1px solid #dedede;
+            padding: 15px;
+            margin: 10px;
+            background: #9E9AFB;
+        }
+        .main {
+            padding: 0px;
+        }
+        .kiri {
+            width: 250px;
+            border: 1px solid #dedede;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+        }
+        h3 {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #aaa;
+        }
+        .kiri ul {
+            list-style-type: none;
+        }
+        .kiri ul li {
+            display: block;
+        }
+        .kiri ul li a {
+            display: block;
+            border-bottom: 1px solid #dedede;  /* Garis bawah pada tiap link */
+            margin-bottom: 10px;  /* Spasi antara link */
+            padding: 10px 5px;  /* Padding dalam link */
+        }
+        .kiri ul li a:hover {
+            color: #461AF3;
+        }
+        .tengah {
+            width: 500px;
+            border: 1px solid #dedede;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+        }
+        .tengah img {
+            max-width: 100%;
+            height: auto;
+        }
+        .tengah a {
+            font-weight: bold;
+        }
+        .kanan {
+            width: 250px;
+            border: 1px solid #dedede;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+        }
+        .kanan ul {
+            list-style-type: none;
+        }
+        .kanan ul li {
+            display: block;
+        }
+        .kanan ul li a {
+            display: block;
+            border-bottom: 1px solid #dedede;
+            margin-bottom: 10px;
+            padding: 10px 5px;
+        }
+        .kanan ul li a:hover {
+            color: #461AF3;
+        }
+
+        /* Media query untuk layar dengan lebar maksimal 959px */
+        @media screen and (max-width: 959px) {  
+            .container {  
+                width: 100%;  /* Mengatur lebar container agar sesuai layar */
+            }  
+
+            .kiri {  
+                width: 70%;  /* Lebar sidebar kiri menjadi 70% */
+            }  
+
+            .kanan {  
+                width: 30%;  /* Lebar sidebar kanan menjadi 30% */
+            }  
+
+            img {  
+                width: 100%;  /* Mengatur gambar agar mengambil lebar penuh */
+            }  
+        }  
+
+        /* Media query untuk layar dengan lebar maksimal 1080px */
+        @media screen and (max-width: 1080px) {  
+            .container {  
+                width: 100%;  /* Lebar container menjadi 100% */
+            }  
+
+            .kiri {  
+                width: 25%;  /* Lebar sidebar kiri menjadi 25% */
+                background: #D6CCFE;  /* Latar belakang ungu terang */
+            }  
+
+            .tengah {  
+                width: 68%;  /* Lebar konten tengah menjadi 68% */
+                float: right;  /* Posisi konten tengah di kanan */
+            }  
+
+            .kanan {  
+                clear: both;  /* Mengatur agar elemen ini berada di bawah lainnya */
+                padding: 1% 4%;  /* Padding dalam elemen */
+                width: auto;  /* Lebar otomatis */
+                float: none;  /* Menghapus float */
+                background: #D6CCFE;  /* Latar belakang ungu terang */
+            }  
+        }  
+
+        /* Media query untuk layar dengan lebar maksimal 780px */
+        @media screen and (max-width: 780px) {  
+            .header,  
+            .footer {  
+                text-align: center;  /* Mengatur teks di header dan footer ke tengah */
+            }  
+
+            .kiri,  
+            .tengah,  
+            .kanan {  
+                width: auto;  /* Lebar otomatis untuk elemen layout */
+                float: none;  /* Menghapus float */
+            }  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="text-align: center;">Selamat Datang di Perpustakaan XYZ</h1>
+        </div>
+
+        <div class="main">
+            <div class="kiri">
+                <h3 style="text-align: center;">Menu</h3>
+                <ul>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Daftar Buku</a></li>
+                </ul>
+            </div>
+
+            <div class="tengah">
+                <h3 style="text-align: center;">Berita</h3>
+                <p style="text-align: center;"><strong><a href="">Membuat Design Web Responsive</a></strong></p>
+                <p><img src="tes.jpg" alt="Ini gambar wak"></p>
+                <p><a href="">Baca Selengkapnya >>></a></p>
+            </div>
+
+            <div class="kanan">
+                <h3 style="text-align: center;">Buku Terpopuler</h3>
+                <ul>
+                    <li><a href="">Web Design</a></li>
+                    <li><a href="">Pemrograman</a></li>
+                    <li><a href="">Database</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p style="text-align: center;">Copyright &copy; 2018 Belajar CSS Responsive</p>
+        </div>
+    </div>
+</body>
+</html>

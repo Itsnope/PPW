@@ -1,0 +1,22 @@
+-- Database
+CREATE DATABASE IF NOT EXISTS regis_ppw;
+USE regis_ppw;
+
+-- Tabel
+CREATE TABLE registrasi_ssb (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    tempat_lahir VARCHAR(50) NOT NULL,
+    tanggal_lahir DATE NOT NULL,
+    usia INT NOT NULL,
+    jenis_kelamin ENUM('Laki-laki', 'Perempuan') NOT NULL,
+    nama_ortu VARCHAR(100) NOT NULL,
+    no_telp VARCHAR(15) NOT NULL,
+    alamat TEXT NOT NULL,
+    rt VARCHAR(3) NOT NULL,
+    rw VARCHAR(3) NOT NULL,
+    desa VARCHAR(50) NOT NULL,
+    kecamatan VARCHAR(50) NOT NULL,
+    foto VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

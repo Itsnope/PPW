@@ -1,0 +1,6 @@
+# Untuk folder uploads
+Options -Indexes
+<FilesMatch ".(jpg|jpeg|png)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>

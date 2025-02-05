@@ -1,0 +1,15 @@
+{
+    "name": "noverianus/ppw9",
+    "autoload": {
+        "psr-4": {
+            "Noverianus\\Ppw9\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Itsnope",
+            "email": "noverjkd@gmail.com"
+        }
+    ],
+    "require": {}
+}
